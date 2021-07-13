@@ -21,32 +21,6 @@ body{
   height: 100vh;
   width: 100%;
 }
-.section-center{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: 6;
-  text-align: center;
-  transform: translateY(-50%);
-}
-h1{
-  font-family: 'Londrina Outline', cursive;
-  font-weight: 800;
-  font-size: 7vw;
-  line-height: 1;
-  color: #ffeba7;
-  text-align: center;
-  -webkit-text-stroke: 2px #ffeba7;
-  text-stroke: 2px #ffeba7;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  color: transparent;
-}
-
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){
   position: absolute;
@@ -164,23 +138,23 @@ h1{
               right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
               transform 250ms 700ms ease,
               width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
-              height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+              height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);display: flex;
+              align-items: center;
+              justify-content: center;
 }
 
-.nav ul{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: block;
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 0;
   margin: 0;
   z-index: 6;
   text-align: center;
-  transform: translateY(-50%);
   list-style: none;
 }
-.nav ul li{
+.nav ul li {
   position: relative;
   display: block;
   width: 100%;
@@ -189,28 +163,27 @@ h1{
   text-align: center;
   list-style: none;
   pointer-events: none;
-  opacity: 0;
   visibility: hidden;
   transform: translateY(30px);
   transition: all 250ms linear;
 }
-.nav ul li:nth-child(1){
+.nav ul li:nth-child(1) {
   transition-delay: 250ms;
 }
-.nav ul li:nth-child(2){
+.nav ul li:nth-child(2) {
   transition-delay: 200ms;
 }
-.nav ul li:nth-child(3){
+.nav ul li:nth-child(3) {
   transition-delay: 150ms;
 }
-.nav ul li:nth-child(4){
+.nav ul li:nth-child(4) {
   transition-delay: 100ms;
 }
-.nav ul li:nth-child(4){
+.nav ul li:nth-child(4) {
   transition-delay: 50ms;
 }
-.nav ul li a{
-  font-family: 'Londrina Outline', cursive;
+.nav ul li a {
+  font-family: "Londrina Outline", cursive;
   font-size: 9vh;
   text-transform: uppercase;
   line-height: 1.2;
@@ -220,15 +193,15 @@ h1{
   color: #ececee;
   transition: all 250ms linear;
 }
-.nav ul li a:hover{
+.nav ul li a:hover {
   text-decoration: none;
   color: #ffeba7;
 }
-.nav ul li a:after{
+.nav ul li a:after {
   display: block;
   position: absolute;
   top: 50%;
-  content: '';
+  content: "";
   height: 2vh;
   margin-top: -1vh;
   width: 0;
@@ -237,45 +210,41 @@ h1{
   opacity: 0.5;
   transition: width 250ms linear;
 }
-.nav ul li a:hover:after{
+.nav ul li a:hover:after {
   width: 100%;
 }
 
-
-.menu-icon:checked ~ .nav  ul li {
+.menu-icon:checked ~ .nav ul li {
   pointer-events: auto;
   visibility: visible;
-  opacity: 1;
   transform: translateY(0);
-  transition: opacity 350ms ease,
-              transform 250ms ease;
+  transition: opacity 350ms ease, transform 250ms ease;
 }
-.menu-icon:checked ~ .nav ul li:nth-child(1){
+.menu-icon:checked ~ .nav ul li:nth-child(1) {
   transition-delay: 1400ms;
 }
-.menu-icon:checked ~ .nav ul li:nth-child(2){
+.menu-icon:checked ~ .nav ul li:nth-child(2) {
   transition-delay: 1480ms;
 }
-.menu-icon:checked ~ .nav ul li:nth-child(3){
+.menu-icon:checked ~ .nav ul li:nth-child(3) {
   transition-delay: 1560ms;
 }
-.menu-icon:checked ~ .nav ul li:nth-child(4){
+.menu-icon:checked ~ .nav ul li:nth-child(4) {
   transition-delay: 1640ms;
 }
-.menu-icon:checked ~ .nav ul li:nth-child(5){
+.menu-icon:checked ~ .nav ul li:nth-child(5) {
   transition-delay: 1720ms;
 }
 
-
 @media screen and (max-width: 991px) {
   .menu-icon:checked + label,
-  .menu-icon:not(:checked) + label{
+  .menu-icon:not(:checked) + label {
     right: 55px;
   }
-  .nav{
+  .nav {
     right: 30px;
   }
-  h1{
+  h1 {
     font-size: 9vw;
     -webkit-text-stroke: 2px transparent;
     text-stroke: 2px transparent;
@@ -283,9 +252,7 @@ h1{
     text-fill-color: #ffeba7;
     color: #ffeba7;
   }
-  .nav ul li a{
+  .nav ul li a {
     font-size: 8vh;
   }
 }
-
-
