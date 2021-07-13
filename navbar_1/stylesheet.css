@@ -267,8 +267,6 @@ h1{
 }
 
 
-
-
 @media screen and (max-width: 991px) {
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label{
@@ -289,3 +287,5 @@ h1{
     font-size: 8vh;
   }
 }
+
+
