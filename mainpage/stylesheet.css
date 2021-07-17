@@ -12,49 +12,41 @@
 /* CSS of entire contents of webpage */
 html{
     scroll-behavior: smooth;
-	font-size: 6;
+    padding-bottom: 50px;
 }
 
 body {
-	background: url("old_library.jpeg") no-repeat;
-	background-size: 100vw 100vh;
+	background: url("old_library.jpeg") no-repeat center;
+	background-size: cover;
 	background-attachment: fixed;
-	background-position: cover;
-	padding: 1rem;
+	padding: 3vw;
 }
 
 .header{
-    font-size: 3.5rem;
+    font-size: 3vw;
     font-family: 'Teko', sans-serif;
     color: #3effda;
 }
 
-span.text{
-	font-size: 0.6rem;
+.text{
+	font-size: 1vw;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	line-height: 0.9rem!important;
+}
+
+#para-sec {
 }
 
 .para{
-	min-width: calc(325px - 1rem - 10px);display: flex;
-    flex-direction: column wrap;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: space-evenly;
 	width: 50%;
     border-left-style: solid;
-    border-width: 0.7rem;
+    border-width: 7px;
     border-color: white;
-	background-color: rgba(40, 81, 114, 0.8);
+	background-color: rgba(3,21,36,0.8);
 	margin: 0;
-	padding: 1rem;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	padding: 5vw;
+	transform: translateY(50%);
 }
-
 
 .carousel-inner .carousel-item {
 	transition: -webkit-transform 1.3s ease;
@@ -64,16 +56,15 @@ span.text{
 img {
 	object-fit: cover;
 	width: 100%;
-	box-shadow: 1rem 1rem 1rem white inset;
+	box-shadow: 10 10 10px 10px white inset;
 }
 #carousel_pics {
-	margin: 9rem;
+	transform: translateY(100%);
+	margin: 90px;
 	position: relative;
 }
 
-
-
-
-
-
-
+#carousel-sec::after {
+	content: "\A";
+	white-space: pre;
+}
