@@ -30,10 +30,10 @@ body {
 }
 
 span.text{
-	font-size: 1rem;
+	font-size: 0.6rem;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	line-height: 1.2rem!important;
+	line-height: 0.9rem!important;
 }
 
 .para{
@@ -70,3 +70,10 @@ img {
 	margin: 9rem;
 	position: relative;
 }
+
+
+
+
+
+
+
