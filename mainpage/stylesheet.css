@@ -15,7 +15,7 @@ html{
 }
 
 body {
-	background: url("old_library.jpeg") no-repeat;
+	background: url("old_library.jpeg") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 3vw;
