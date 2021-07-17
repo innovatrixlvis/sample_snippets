@@ -22,15 +22,16 @@ body {
 }
 
 .header{
-    font-size: 3vw;
+    font-size: 4.5vw;
     font-family: 'Teko', sans-serif;
     color: #3effda;
 }
 
 .text{
-	font-size: 1vw;
+	font-size: 1.5vw;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
+	line-height: 1em;
 }
 
 .para{
