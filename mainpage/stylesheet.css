@@ -19,6 +19,7 @@ body {
 	background: url("old_library.jpeg") no-repeat;
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
+	background-position: cover;
 	padding: 1rem;
 }
 
